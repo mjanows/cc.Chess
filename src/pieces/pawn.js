@@ -39,7 +39,7 @@ class Pawn extends Piece {
             }
             else if (this.x != 0){
                 if (board[this.x - 1][this.y] == null) {
-                    ((this.x) - 1 > 0) && possibleMoves.push(`${(this.x) - 1},${this.y}`);
+                    ((this.x) - 1 >= 0) && possibleMoves.push(`${(this.x) - 1},${this.y}`);
                 } 
             }       
         }  
@@ -67,7 +67,7 @@ class Pawn extends Piece {
             }
             else if (this.x != 7){
                 if (board[(this.x) + 1][this.y] == null){
-                    ((this.x) + 1 > 0) && possibleMoves.push(`${(this.x) + 1},${this.y}`);
+                    ((this.x) + 1 <= 7) && possibleMoves.push(`${(this.x) + 1},${this.y}`);
                 }
             }
             
